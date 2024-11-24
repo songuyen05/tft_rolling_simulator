@@ -25,7 +25,6 @@ int main(int argc, char** argv) {
 	int choice = 0;
 	while (choice == 0) {
 		std::cin >> choice;
-		std::cout << "chose: " << choice << '\n';
 		if (choice < 1 || choice > 9)
 			choice = 0;
 	}
@@ -69,6 +68,7 @@ int main(int argc, char** argv) {
 	default:
 		return -12; // failed to make player character
 	}
+	std::cout << "Your Tactician: " << MainCharacter->get_tacticianName() << '\n';
 
 	// displays to user what keys do what
 	std::cout << "Enter l to buy xp (4 gold)" << '\n'

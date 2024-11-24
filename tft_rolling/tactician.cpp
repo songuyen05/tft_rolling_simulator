@@ -41,39 +41,85 @@ void Tactician::LevelUp() {
         playerXP += 4;
         displayXP += 4;
         if (playerXP >= 278) {
+            if (playerXP == 280) {
+                displayXP = 2;
+            }
+            else if (playerXP == 278) {
+                displayXP = 0;
+            }
             playerLevel = 10;
             displayXP = 278;
-            std::cout << "You are level " << playerLevel << '\n'
-                << "Maxed Level";
+            std::cout << "You are level " << playerLevel << "   Maxed Level" << '\n';
         }
         else if (playerXP >= 194) {
+            if (playerXP == 196) {
+                displayXP = 2;
+            }
+            else if (playerXP == 194) {
+                displayXP = 0;
+            }
             playerLevel = 9;
-            displayXP += 4;
-            std::cout << "You are level " << playerLevel << '\n';
+            std::cout << "You are level " << playerLevel << "   XP until Next Level: " << displayXP << "/84" << '\n';
         }
         else if (playerXP >= 122) {
+            if (playerXP == 124) {
+                displayXP = 2;
+            }
+            else if (playerXP == 122) {
+                displayXP = 0;
+            }
             playerLevel = 8;
-            std::cout << "You are level " << playerLevel << '\n';
+            std::cout << "You are level " << playerLevel << "   XP until Next Level: " << displayXP << "/72" << '\n';
         }
         else if (playerXP >= 74) {
+            if (playerXP == 76) {
+                displayXP = 2;
+            }
+            else if (playerXP == 74) {
+                displayXP = 0;
+            }
             playerLevel = 7;
-            std::cout << "You are level " << playerLevel << '\n';
+            std::cout << "You are level " << playerLevel << "   XP until Next Level: " << displayXP << "/48" << '\n';
         }
         else if (playerXP >= 38) {
+            if (playerXP == 40) {
+                displayXP = 2;
+            }
+            else if (playerXP == 38) {
+                displayXP = 0;
+            }
             playerLevel = 6;
-            std::cout << "You are level " << playerLevel << '\n';
+            std::cout << "You are level " << playerLevel << "   XP until Next Level: " << displayXP << "/36" << '\n';
         }
         else if (playerXP >= 18) {
+            if (playerXP == 20) {
+                displayXP = 2;
+            }
+            else if (playerXP == 18) {
+                displayXP = 0;
+            }
             playerLevel = 5;
-            std::cout << "You are level " << playerLevel << '\n';
+            std::cout << "You are level " << playerLevel << "   XP until Next Level: " << displayXP << "/20" << '\n';
         }
         else if (playerXP >= 8) {
+            if (playerXP == 10) {
+                displayXP = 2;
+            }
+            else if (playerXP == 8) {
+                displayXP = 0;
+            }
             playerLevel = 4;
-            std::cout << "You are level " << playerLevel << '\n';
+            std::cout << "You are level " << playerLevel << "   XP until Next Level: " << displayXP << "/10" << '\n';
         }
         else if (playerXP >= 2) {
+            if (playerXP == 4) {
+                displayXP = 2;
+            }
+            else if (playerXP == 2) {
+                displayXP = 0;
+            }
             playerLevel = 3;
-            std::cout << "You are level " << playerLevel << '\n';
+            std::cout << "You are level " << playerLevel << "   XP until Next Level: " << displayXP << "/6" << '\n';
         }
     }
 }
