@@ -4,6 +4,7 @@
 #include<cstdlib>
 #include<ctime>
 #include<cmath>
+#include<vector>
 #include "tactician.h"
 
 
@@ -11,6 +12,18 @@ using namespace std;
 
 bool rolling = true;
 Tactician* MainCharacter = nullptr;
+
+vector <std::string> one_cost{"Amumu", "Darius", "Draven", "Irelia", "Lux", "Maddie",
+"Morgana", "Powder", "Singed", "Steb", "Trundle", "Vex", "Violet", "Zyra"};
+vector <std::string> two_cost{"Akali", "Camille", "Leona", "Nocturne", "Rell",
+"Renata Glasc", "Sett", "Tristana", "Urgot", "Vander", "Vladimir", "Zeri", "Ziggs" };
+vector <std::string> three_cost{ "Blitzcrank", "Cassiopeia", "Ezreal", "Gangplank",
+"Kog'Maw", "Loris", "Nami", "Nunu & Willump", "Renni", "Scar", "Smeech", "Swain", "Twisted Fate" };
+vector <std::string> four_cost{ "Ambessa", "Corki", "Dr. Mundo", "Ekko", "Elise", "Garen",
+"Heimerdinger", "Illaoi", "Silco", "Twitch", "Vi", "Zoe" };
+vector <std::string> five_cost{ "Caitlyn", "Jayce", "Jinx", "LeBlanc", "Malzahar",
+"Mordekaiser", "Rumble", "Sevika" };
+
 
 
 int main(int argc, char** argv) {
@@ -83,6 +96,7 @@ int main(int argc, char** argv) {
 			std::cout << "Level: " << MainCharacter->get_level() << "  Gold Spent: " << MainCharacter->get_goldSpent() << '\n';
 			break;
 		case 'b':
+			system("CLS");
 			MainCharacter->Shop(MainCharacter->get_level());
 			std::cout << "Level: " << MainCharacter->get_level() << "  Gold Spent: " << MainCharacter->get_goldSpent() << '\n';
 			break;
