@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="random.cpp" />
     <ClCompile Include="tactician.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="random.h" />
     <ClInclude Include="tactician.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
